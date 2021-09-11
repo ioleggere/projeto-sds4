@@ -18,6 +18,7 @@ public class Sale {
 	private long id;
 	private Integer visited;
 	private Integer deals;
+	private Double amount;
 	private LocalDate date;	
 	
 	@ManyToOne
@@ -28,10 +29,11 @@ public class Sale {
 		
 	}
 	
-	public Sale(long id, Integer visited, Integer deals, LocalDate date, Seller seller) {
+	public Sale(long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
 		this.visited = visited;
 		this.deals = deals;
+		this.amount = amount;
 		this.date = date;
 		this.seller = seller;
 	}
