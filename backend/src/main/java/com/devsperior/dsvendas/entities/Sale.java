@@ -61,6 +61,16 @@ public class Sale {
 	public void setDeals(Integer deals) {
 		this.deals = deals;
 	}
+	
+	
+
+	public Double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(Double amount) {
+		this.amount = amount;
+	}
 
 	public LocalDate getDate() {
 		return date;
